@@ -1,0 +1,7 @@
+/* src/index.css or src/App.css */
+@import "tailwindcss";
+
+body {
+  background-color: black;
+  color: white;
+}
