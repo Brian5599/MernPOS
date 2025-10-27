@@ -11,7 +11,7 @@ import uploadRoutes from "./routes/uploadRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import brandRoutes from "./routes/brandRoutes.js";
 dotenv.config();
-const port = process.env.PORT || 5001;
+const port = process.env.PORT;
 connectDB();
 const app = express();
 
