@@ -4,15 +4,15 @@ import { PayPalButtons, usePayPalScriptReducer } from "@paypal/react-paypal-js";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import Message from "../pages/Admin/Message";
-import Loader from "../components/Loader";
+import Message from "../Admin/Message";
+import Loader from "../../components/Loader";
 import {
   useDeliverOrderMutation,
   useGetOrderDetailsQuery,
   useGetPaypalClientIdQuery,
   usePayOrderMutation,
-} from "../redux/api/orderApiSlice";
-import { clearCartItems } from "../redux/features/cart/cartSlice";
+} from "../../redux/api/orderApiSlice";
+import { clearCartItems } from "../../redux/features/cart/cartSlice";
 
 const OrderForm = () => {
   const { id: orderId } = useParams();

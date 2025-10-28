@@ -263,14 +263,14 @@
 // export default Order;
 
 import { useEffect } from "react";
-import { useCreateOrderMutation } from "../redux/api/orderApiSlice";
+import { useCreateOrderMutation } from "../../redux/api/orderApiSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
-import ProgressSteps from "../components/ProgressSteps";
-import Message from "../pages/Admin/Message";
-import { clearCartItems } from "../redux/features/cart/cartSlice";
+import ProgressSteps from "../../components/ProgressSteps";
+import Message from "../../pages/Admin/Message";
+// import { clearCartItems } from "../../redux/features/cart/cartSlice";
 import { toast } from "react-toastify";
-import Loader from "../components/Loader";
+import Loader from "../../components/Loader";
 
 const Order = () => {
   const cart = useSelector((state) => state.cart);
